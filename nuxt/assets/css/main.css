@@ -239,11 +239,11 @@ img{
 /* Responsive Design */
 @media (width < 1280px) {
   .adapt {
-    padding: 0;
+    padding-inline: 5%;
   }
 }
 @media (width < 768px) {
   .adapt {
-    padding: 0 10px;
+    padding-inline: 10px;
   }
 }

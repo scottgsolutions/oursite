@@ -15,12 +15,13 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 
 interface _GlobalComponents {
   'Navigation': typeof import("../../components/Navigation.vue")['default']
-  'SectionsBusinessAdHoc': typeof import("../../components/sections/BusinessAdHoc.vue")['default']
-  'SectionsBusinessHero': typeof import("../../components/sections/BusinessHero.vue")['default']
-  'SectionsBusinessProcess': typeof import("../../components/sections/BusinessProcess.vue")['default']
-  'SectionsBusinessReviews': typeof import("../../components/sections/BusinessReviews.vue")['default']
-  'SectionsBusinessServicePlans': typeof import("../../components/sections/BusinessServicePlans.vue")['default']
-  'SectionsBusinessServices': typeof import("../../components/sections/BusinessServices.vue")['default']
+  'BusinessAdHoc': typeof import("../../components/business/AdHoc.vue")['default']
+  'BusinessGetStarted': typeof import("../../components/business/GetStarted.vue")['default']
+  'BusinessHero': typeof import("../../components/business/Hero.vue")['default']
+  'BusinessProcess': typeof import("../../components/business/Process.vue")['default']
+  'BusinessReviews': typeof import("../../components/business/Reviews.vue")['default']
+  'BusinessServicePlans': typeof import("../../components/business/ServicePlans.vue")['default']
+  'BusinessServices': typeof import("../../components/business/Services.vue")['default']
   'NuxtWelcome': typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
   'NuxtLayout': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
   'NuxtErrorBoundary': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -45,12 +46,13 @@ interface _GlobalComponents {
   'Body': typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   'NuxtIsland': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
   'LazyNavigation': LazyComponent<typeof import("../../components/Navigation.vue")['default']>
-  'LazySectionsBusinessAdHoc': LazyComponent<typeof import("../../components/sections/BusinessAdHoc.vue")['default']>
-  'LazySectionsBusinessHero': LazyComponent<typeof import("../../components/sections/BusinessHero.vue")['default']>
-  'LazySectionsBusinessProcess': LazyComponent<typeof import("../../components/sections/BusinessProcess.vue")['default']>
-  'LazySectionsBusinessReviews': LazyComponent<typeof import("../../components/sections/BusinessReviews.vue")['default']>
-  'LazySectionsBusinessServicePlans': LazyComponent<typeof import("../../components/sections/BusinessServicePlans.vue")['default']>
-  'LazySectionsBusinessServices': LazyComponent<typeof import("../../components/sections/BusinessServices.vue")['default']>
+  'LazyBusinessAdHoc': LazyComponent<typeof import("../../components/business/AdHoc.vue")['default']>
+  'LazyBusinessGetStarted': LazyComponent<typeof import("../../components/business/GetStarted.vue")['default']>
+  'LazyBusinessHero': LazyComponent<typeof import("../../components/business/Hero.vue")['default']>
+  'LazyBusinessProcess': LazyComponent<typeof import("../../components/business/Process.vue")['default']>
+  'LazyBusinessReviews': LazyComponent<typeof import("../../components/business/Reviews.vue")['default']>
+  'LazyBusinessServicePlans': LazyComponent<typeof import("../../components/business/ServicePlans.vue")['default']>
+  'LazyBusinessServices': LazyComponent<typeof import("../../components/business/Services.vue")['default']>
   'LazyNuxtWelcome': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   'LazyNuxtLayout': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
   'LazyNuxtErrorBoundary': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>

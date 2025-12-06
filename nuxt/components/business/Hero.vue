@@ -12,8 +12,8 @@
             I help the rest fall into place.
           </p>
           <div class="cta-buttons">
-            <button class="btn btn-primary cta">Get Started Free</button>
-            <button class="btn btn-secondary">Learn More</button>
+            <button class="btn btn-primary cta" @click="openBooking">Get Started Free</button>
+            <button class="btn btn-secondary">See Services</button>
           </div>
         </div>
         <div class="hero-image">
@@ -117,3 +117,12 @@
 
 }
 </style>
+
+<script setup lang="ts">
+const openBooking = () => {
+  const url = "https://outlook.office.com/bookwithme/user/00c7dfba3d57416d953c1d312352de52@sgsolutions.dev/meetingtype/R4raDAJ0Cku7BFtvm7jbjg2?anonymous&ismsaljsauthenabled&ep=mlink";
+  
+  // Open a pop-up window 800x600
+  window.open(url, "bookingWindow", "width=800,height=600,top=100,left=100,resizable=yes,scrollbars=yes");
+};
+</script>

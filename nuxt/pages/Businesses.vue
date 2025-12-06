@@ -4,17 +4,19 @@
 
     <Navigation class="adapt"/>
     
-    <SectionsBusinessHero class="section adapt"/>
+    <BusinessHero class="section adapt"/>
     
-    <SectionsBusinessProcess class="section adapt"/>
+    <BusinessProcess class="section adapt"/>
     
-    <SectionsBusinessReviews class="section adapt"/>
+    <BusinessReviews class="section adapt"/>
 
-    <SectionsBusinessServices class="section adapt diagonal"/>
+    <BusinessServices class="section adapt diagonal"/>
     
-    <SectionsBusinessServicePlans class="section adapt"/>
+    <BusinessServicePlans class="section adapt"/>
     
-    <SectionsBusinessAdHoc class="section adapt diagonal-black"/>
+    <BusinessAdHoc class="section adapt diagonal-black"/>
+  
+    <BusinessGetStarted class="section adapt diagonal"/>
   </div>
 </template>
 

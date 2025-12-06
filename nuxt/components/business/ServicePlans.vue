@@ -60,7 +60,7 @@
 .service-plans-section {
   /* background: var(--gray-dark); */
   color: var(--white);
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .container {
@@ -72,15 +72,15 @@
 .section-title {
   font-size: var(--fontsize-h1);
   font-weight: var(--fontweight-h1);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
   text-align: left;
 }
 
 .plans-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-xl);
+  /* margin-bottom: var(--spacing-xl); */
 }
 
 .plan-card {
@@ -159,6 +159,7 @@
 .btn-primary {
   background: var(--primary);
   color: var(--black);
+  margin: var(--spacing-xl) auto 0 auto;
 }
 
 .btn-primary:hover {

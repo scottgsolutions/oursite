@@ -15,12 +15,13 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 
 
 export const Navigation: typeof import("../components/Navigation.vue")['default']
-export const SectionsBusinessAdHoc: typeof import("../components/sections/BusinessAdHoc.vue")['default']
-export const SectionsBusinessHero: typeof import("../components/sections/BusinessHero.vue")['default']
-export const SectionsBusinessProcess: typeof import("../components/sections/BusinessProcess.vue")['default']
-export const SectionsBusinessReviews: typeof import("../components/sections/BusinessReviews.vue")['default']
-export const SectionsBusinessServicePlans: typeof import("../components/sections/BusinessServicePlans.vue")['default']
-export const SectionsBusinessServices: typeof import("../components/sections/BusinessServices.vue")['default']
+export const BusinessAdHoc: typeof import("../components/business/AdHoc.vue")['default']
+export const BusinessGetStarted: typeof import("../components/business/GetStarted.vue")['default']
+export const BusinessHero: typeof import("../components/business/Hero.vue")['default']
+export const BusinessProcess: typeof import("../components/business/Process.vue")['default']
+export const BusinessReviews: typeof import("../components/business/Reviews.vue")['default']
+export const BusinessServicePlans: typeof import("../components/business/ServicePlans.vue")['default']
+export const BusinessServices: typeof import("../components/business/Services.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -45,12 +46,13 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const LazyNavigation: LazyComponent<typeof import("../components/Navigation.vue")['default']>
-export const LazySectionsBusinessAdHoc: LazyComponent<typeof import("../components/sections/BusinessAdHoc.vue")['default']>
-export const LazySectionsBusinessHero: LazyComponent<typeof import("../components/sections/BusinessHero.vue")['default']>
-export const LazySectionsBusinessProcess: LazyComponent<typeof import("../components/sections/BusinessProcess.vue")['default']>
-export const LazySectionsBusinessReviews: LazyComponent<typeof import("../components/sections/BusinessReviews.vue")['default']>
-export const LazySectionsBusinessServicePlans: LazyComponent<typeof import("../components/sections/BusinessServicePlans.vue")['default']>
-export const LazySectionsBusinessServices: LazyComponent<typeof import("../components/sections/BusinessServices.vue")['default']>
+export const LazyBusinessAdHoc: LazyComponent<typeof import("../components/business/AdHoc.vue")['default']>
+export const LazyBusinessGetStarted: LazyComponent<typeof import("../components/business/GetStarted.vue")['default']>
+export const LazyBusinessHero: LazyComponent<typeof import("../components/business/Hero.vue")['default']>
+export const LazyBusinessProcess: LazyComponent<typeof import("../components/business/Process.vue")['default']>
+export const LazyBusinessReviews: LazyComponent<typeof import("../components/business/Reviews.vue")['default']>
+export const LazyBusinessServicePlans: LazyComponent<typeof import("../components/business/ServicePlans.vue")['default']>
+export const LazyBusinessServices: LazyComponent<typeof import("../components/business/Services.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
 export const LazyNuxtErrorBoundary: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>
