@@ -2,10 +2,10 @@
 FROM node:22-alpine AS build 
 WORKDIR /app/nuxt 
 # Copy only necessary files to cache node_modules layer
-COPY nuxt/package.json nuxt/package-lock.json ./
+COPY package.json package-lock.json ./
 RUN npm install
 # Copy the rest of the application code
-COPY nuxt/. .
+COPY . .
 # Run the SSG build
 RUN npm run build && npm run generate 
 # Stage 2: Production Stage (Uses a tiny NGINX image to serve static files)
