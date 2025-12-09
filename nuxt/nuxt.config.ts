@@ -1,15 +1,14 @@
-// nuxt/nuxt.config.ts
+// https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   pages: true,
-  ssr: true,                     // static site generation
-  target: 'static',               // explicitly SSG
+  ssr: true,
   nitro: {
-    preset: 'static'              // generate static output
-  },
-  routeRules: {
-    '/**': { prerender: true }    // pre-render all routes
+    prerender: {
+      routes: ['/']
+    }
   },
   app: {
     head: {
