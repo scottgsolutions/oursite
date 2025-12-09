@@ -100,7 +100,12 @@
   max-width: 500px;
   margin-inline: auto 0
 }
-
+@media (max-width: 1080px) {
+  .hero-image img{
+    display: none;
+    
+  }
+}
 @media (max-width: 768px) {
   .hero-content {
     grid-template-columns: 1fr;
@@ -115,7 +120,9 @@
   .cta-buttons {
     justify-content: center;
   }
-
+  .hero-image {
+    display: none;
+  }
 }
 </style>
 

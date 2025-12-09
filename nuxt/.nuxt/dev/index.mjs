@@ -636,6 +636,12 @@ const _inlineRuntimeConfig = {
       "/__nuxt_error": {
         "cache": false
       },
+      "/": {
+        "redirect": {
+          "to": "/businesses",
+          "statusCode": 307
+        }
+      },
       "/_nuxt/builds/meta/**": {
         "headers": {
           "cache-control": "public, max-age=31536000, immutable"
@@ -1364,7 +1370,7 @@ const _0DnQ3Aau1aFLcxvSauIb6FsBw6g0n89N6iFP4JRV6OA = (function(nitro) {
 
 const rootDir = "/Users/scottg/Projects/Web/oursite/nuxt";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
+const appHead = {"meta":[{"charset":"utf-8"},{"name":"description","content":"Your site description for SEO"},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[],"style":[],"script":[],"noscript":[],"title":"Your Site Title"};
 
 const appRootTag = "div";
 
