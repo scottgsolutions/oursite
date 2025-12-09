@@ -59,7 +59,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import { ref, onMounted, onUnmounted, nextTick } from "vue";
 
 interface Props {
@@ -229,7 +229,7 @@ onUnmounted(() => {
   window.removeEventListener("message", onMessage);
   if (poller) clearInterval(poller);
 });
-</script>
+</script> -->
 
 
 <style scoped>
