@@ -7,8 +7,11 @@ export default defineNuxtConfig({
   ssr: true,
   nitro: {
     prerender: {
-      routes: ['/']
+      routes: ['/', '/businesses']
     }
+  },
+  routeRules: {
+    '/': { redirect: '/businesses' }
   },
   app: {
     head: {
