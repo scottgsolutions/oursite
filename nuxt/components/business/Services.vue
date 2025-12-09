@@ -42,12 +42,12 @@
       </div>
       <div class="grid">
         <div class="empty"></div>
-        <button class="btn btn-secondary cta grid-center">Get Started Free</button>
-        <h3 class="grid-right">Service Plans Below 
+        <button class="btn btn-secondary cta grid-center" @click="openBooking">Get Started Free</button>
+        <a href="#service-plans"><h3 class="grid-right">Service Plans Below 
           <!-- <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
             <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg> -->
-        </h3>
+        </h3></a>
       </div>
     </div>
   </section>
@@ -57,13 +57,13 @@
 .services-section {
   /* background: var(--black); */
   color: var(--white);
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  /* margin: 0 auto; */
+  padding-block: 60px 50px;
 }
 
 .services-grid {
@@ -159,3 +159,11 @@
   }
 }
 </style>
+<script setup lang="ts">
+const openBooking = () => {
+  const url = "https://outlook.office.com/bookwithme/user/00c7dfba3d57416d953c1d312352de52@sgsolutions.dev/meetingtype/R4raDAJ0Cku7BFtvm7jbjg2?anonymous&ismsaljsauthenabled&ep=mlink";
+  
+  // Open a pop-up window 800x600
+  window.open(url, "bookingWindow", "width=800,height=600,top=100,left=100,resizable=yes,scrollbars=yes");
+};
+</script>

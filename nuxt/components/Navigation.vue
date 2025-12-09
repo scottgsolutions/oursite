@@ -4,7 +4,7 @@
       <div class="nav-wrapper">
         <!-- Logo -->
         <div class="logo">
-          <NuxtLink to="/" class="logo-link">
+          <NuxtLink to="/Businesses" class="logo-link">
             <div class="logo-content">
               <img src="@/assets/dark-logo.svg" alt="ScottG Solutions Logo" class="logo-icon" />
               <div class="logo-text">
@@ -16,7 +16,7 @@
         </div>
         
         <!-- Desktop Navigation -->
-        <ul class="nav-links desktop-nav">
+        <!-- <ul class="nav-links desktop-nav">
           <li class="dropdown-container">
             <button class="nav-link dropdown-trigger" @mouseenter="showServicesDropdown" @mouseleave="hideServicesDropdown">
               Services
@@ -31,17 +31,19 @@
           </li>
           <li><NuxtLink to="/about" class="nav-link">About</NuxtLink></li>
           <li><NuxtLink to="/blog" class="nav-link">Blog</NuxtLink></li>
-        </ul>
+        </ul> -->
         
         <!-- CTA Button -->
         <div class="nav-cta desktop-nav">
-          <NuxtLink to="/contact" class="btn btn-secondary">Contact Me</NuxtLink>
+          <NuxtLink to="#get-started" class="btn btn-secondary">Contact Me</NuxtLink>
         </div>
         
         <!-- Mobile Menu Toggle -->
-        <button class="mobile-toggle" @click="toggleMobileMenu" aria-label="Toggle mobile menu">
+         
+        <!-- <button class="mobile-toggle" @click="toggleMobileMenu" aria-label="Toggle mobile menu">
           <span class="hamburger"></span>
-        </button>
+        </button> -->
+
       </div>
       
       <!-- Mobile Navigation -->
@@ -381,13 +383,15 @@ const toggleMobileServices = () => {
   .desktop-nav {
     display: none;
   }
+
+
   
   .mobile-toggle {
     display: block;
   }
   
-  .logo-text {
+  /* .logo-text {
     display: none;
-  }
+  } */
 }
 </style>

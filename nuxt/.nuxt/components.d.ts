@@ -14,6 +14,8 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 
+export const Footer: typeof import("../components/Footer.vue")['default']
+export const FormToBooking: typeof import("../components/FormToBooking.vue")['default']
 export const Navigation: typeof import("../components/Navigation.vue")['default']
 export const BusinessAdHoc: typeof import("../components/business/AdHoc.vue")['default']
 export const BusinessGetStarted: typeof import("../components/business/GetStarted.vue")['default']
@@ -45,6 +47,8 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+export const LazyFooter: LazyComponent<typeof import("../components/Footer.vue")['default']>
+export const LazyFormToBooking: LazyComponent<typeof import("../components/FormToBooking.vue")['default']>
 export const LazyNavigation: LazyComponent<typeof import("../components/Navigation.vue")['default']>
 export const LazyBusinessAdHoc: LazyComponent<typeof import("../components/business/AdHoc.vue")['default']>
 export const LazyBusinessGetStarted: LazyComponent<typeof import("../components/business/GetStarted.vue")['default']>

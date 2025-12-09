@@ -10,13 +10,15 @@
     
     <BusinessReviews class="section adapt"/>
 
-    <BusinessServices class="section adapt diagonal"/>
+    <BusinessServices id="services" class="section adapt diagonal"/>
     
-    <BusinessServicePlans class="section adapt"/>
+    <BusinessServicePlans id="service-plans" class="section adapt"/>
     
-    <BusinessAdHoc class="section adapt diagonal-black"/>
+    <BusinessAdHoc id="ad-hoc" class="section adapt diagonal-black"/>
   
-    <BusinessGetStarted class="section adapt diagonal"/>
+    <BusinessGetStarted id="get-started" class="section adapt diagonal"/>
+
+    <Footer class="section adapt"/>
   </div>
 </template>
 

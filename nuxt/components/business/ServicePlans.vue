@@ -49,8 +49,8 @@
       </div>
       <div class="cta-container grid">
         <div class="empty"></div>
-        <button class="btn btn-primary grid-center">Questions? Reach Out Here</button>
-        <h3 class="grid-right">Ad Hoc Hours Below</h3>
+        <NuxtLink to="#get-started" class="btn btn-primary grid-center">Questions? Reach Out Here</NuxtLink>
+        <a href="#ad-hoc"><h3 class="grid-right">Ad Hoc Hours Below</h3></a>
       </div>
     </div>
   </section>
@@ -60,13 +60,13 @@
 .service-plans-section {
   /* background: var(--gray-dark); */
   color: var(--white);
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  /* margin: 0 auto; */
+  padding-block: 60px 50px;
 }
 
 .section-title {

@@ -13,7 +13,8 @@
           </p>
           <div class="cta-buttons">
             <button class="btn btn-primary cta" @click="openBooking">Get Started Free</button>
-            <button class="btn btn-secondary">See Services</button>
+            <!-- <button class="btn btn-secondary" href="#services">See Services</button> -->
+            <NuxtLink to="#services" class="btn btn-secondary">See Services</NuxtLink>
           </div>
         </div>
         <div class="hero-image">

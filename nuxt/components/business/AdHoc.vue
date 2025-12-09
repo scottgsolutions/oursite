@@ -8,7 +8,7 @@
             <h3 class="service-name">Design / Strategy Calls</h3>
             <span class="service-price">$100 / hr</span>
           </div>
-          <button class="btn btn-primary">Buy Now</button>
+          <!-- <button class="btn btn-primary">Buy Now</button> -->
         </div>
         
         <div class="service-item">
@@ -16,7 +16,7 @@
             <h3 class="service-name">Website Updates / Integrations</h3>
             <span class="service-price">$150 / hr</span>
           </div>
-          <button class="btn btn-primary">Buy Now</button>
+          <!-- <button class="btn btn-primary">Buy Now</button> -->
         </div>
       </div>
     </div>
@@ -27,13 +27,13 @@
 .adhoc-services-section {
   /* background: var(--black); */
   color: var(--white);
-  padding: 50px 0;
+  padding-top: 50px;
 }
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  /* margin: 0 auto; */
+  padding-block: 60px 50px;
 }
 
 .services-list {
@@ -116,6 +116,12 @@
   
   .service-info {
     align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container{
+    margin: 0 auto;
   }
 }
 </style>

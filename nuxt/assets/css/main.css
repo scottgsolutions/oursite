@@ -125,8 +125,13 @@ p.caption {
   font-weight: var(--fontweight-caption);
   line-height: var(--lineheight-caption);
 }
+a{
+  color: inherit;
+  text-decoration: none;
+}
 .section{
   position: relative;
+  scroll-margin-top: 80px;
 }
 
 .section-title {
@@ -136,7 +141,7 @@ p.caption {
 /* Layout Utilities */
 .container {
   max-width: 100%;
-  margin: 0 auto 0 0;
+  /* margin: 0 auto 0 0; */
   
 }
 .adapt{
@@ -246,4 +251,5 @@ img{
   .adapt {
     padding-inline: 10px;
   }
+  
 }
