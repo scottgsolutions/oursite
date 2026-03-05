@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-section">
+  <section class="hero-section" @mousemove="handleMouseMove">
     <div class="container">
       <div class="hero-content">
         <div class="text-content">
@@ -18,7 +18,7 @@
           </div>
         </div>
         <div class="hero-image">
-          <img src="/assets/laptop.svg" alt="Laptop showing website" />
+          <img ref="heroImg" src="/assets/collage.svg" alt="sites and pipelines collage" />
         </div>
       </div>
     </div>
@@ -94,11 +94,18 @@
 .cta:hover {
   background: var(--primary-dark);
 }
+.hero-image {
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%);
+  mask-image: linear-gradient(to right, transparent 0%, black 30%);
+  overflow: hidden;
+}
 .hero-image img {
   width: 100%;
   height: auto;
-  max-width: 500px;
-  margin-inline: auto 0
+  max-width: 550px;
+  margin-inline: auto 0;
+  transition: transform 0.08s ease-out;
+  will-change: transform;
 }
 @media (max-width: 1080px) {
   .hero-image img{
@@ -127,6 +134,18 @@
 </style>
 
 <script setup lang="ts">
+import { ref } from 'vue';
+
+const heroImg = ref<HTMLImageElement | null>(null);
+
+const handleMouseMove = (e: MouseEvent) => {
+  if (!heroImg.value) return;
+  const { innerWidth, innerHeight } = window;
+  const x = (e.clientX / innerWidth - 0.5) * 12;
+  const y = (e.clientY / innerHeight - 0.5) * 12;
+  heroImg.value.style.transform = `translate(${x}px, ${y}px)`;
+};
+
 const openBooking = () => {
   const url = "https://outlook.office.com/bookwithme/user/00c7dfba3d57416d953c1d312352de52@sgsolutions.dev/meetingtype/R4raDAJ0Cku7BFtvm7jbjg2?anonymous&ismsaljsauthenabled&ep=mlink";
   
