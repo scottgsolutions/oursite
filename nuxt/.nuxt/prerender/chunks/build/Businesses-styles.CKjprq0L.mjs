@@ -1,0 +1,8 @@
+const Businesses_vue_vue_type_style_index_0_scoped_5ad525eb_lang = `.landing-page[data-v-5ad525eb]{min-height:100vh}.fixed-bg[data-v-5ad525eb]{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='600' viewBox='0 0 900 600'%3E%3Cpath fill='%2306397d' d='m818 600-25.5-33.3C767 533.3 716 466.7 716 400s51-133.3 72-200 12-133.3 7.5-166.7L791 0h109v600Z'/%3E%3Cpath fill='%2336383f' d='m80 600 4.5-33.3C89 533.3 98 466.7 137 400s108-133.3 189-200S500 66.7 546.5 33.3L593 0h199l4.5 33.3C801 66.7 810 133.3 789 200s-72 133.3-72 200 51 133.3 76.5 166.7L819 600Z'/%3E%3Cpath fill='%23101010' d='M0 600V0h594l-46.5 33.3C501 66.7 408 133.3 327 200S177 333.3 138 400 90 533.3 85.5 566.7L81 600Z'/%3E%3C/svg%3E");background-position:top;background-repeat:no-repeat;background-size:cover;inset:0;pointer-events:none;position:fixed;z-index:-1}.diagonal[data-v-5ad525eb]{isolation:isolate;position:relative}.diagonal[data-v-5ad525eb]:before{content:"";inset:0;position:absolute;z-index:-1;--skew-angle:-5deg;--background:linear-gradient(45deg,var(--primary-dark),var(--secondary-dark));background:var(--background);transform:skewY(var(--skew-angle))}.diagonal-black[data-v-5ad525eb]{isolation:isolate;position:relative}.diagonal-black[data-v-5ad525eb]:before{content:"";inset:0;position:absolute;z-index:-1;--skew-angle:-5deg;--background:var(--black);background:var(--background);transform:skewY(var(--skew-angle))}`;
+
+const BusinessesStyles_CKjprq0L = [
+  Businesses_vue_vue_type_style_index_0_scoped_5ad525eb_lang
+];
+
+export { BusinessesStyles_CKjprq0L as default };
+//# sourceMappingURL=Businesses-styles.CKjprq0L.mjs.map
